@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sedona</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="img/sedona-logo.png" width="138" height="70" alt="Sedona logo">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a href="sedona-hotels.html">Гостиницы</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+		<!-- Контейнер (внизу), в который будет фоном вставляться картинка с горами, нижний зигзаг как псевдоэлемент с абсолютным позиционированием, текст с приветствием как единая картинка. НО, возможно, стоит сделать в этом div еще один div как контейнер, а в него поместить фоном картинку со словами приветствия, так как она не является контекстным изображением, чисто декоративное -->
+			<div class="welcome">
+				<h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+				<img src="img/welcome-sedona.png" width="" height="" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+			</div>
+			<div class="about_advantages">
+				<p class="about_Sedona">Cедона — небольшой городок в Аризоне, заслуживающий большего!</p>
+			<!-- или ниже p? Может ли заголовок быть не внутри смыслового блока, а отдельно -->
+				<h2 class="reasons_lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+			</div>
+			<section class="reason reason-first">
+				<div class="reason-info">
+					<h3 class="reason-title">Настоящий городок</h3>
+						<span class="reason-number">– №1 –</span>
+						<p class="reason-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>	
+				</div>
+				<div class="reason-image">
+					<img src="img/reason1.jpg" width="" height="" alt="Седона-настоящий городок">
+				</div>
+			</section>
+			<section class="features">
+				<h2 class="visually-hidden">Особенности Седоны</h2>
+				<ul class="features-list">
+					<li class="feature-item feature-item-house">
+						<h3 class="feature-item-title">Жилье</h3>
+						<p class="feature-item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</li>
+					<li class="feature-item feature-item-food">
+						<h3 class="feature-item-title">Еда</h3>
+						<p class="feature-item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					</li>
+					<li class="feature-item feature-item-souvenirs">
+						<h3 class="feature-item-title">Сувениры</h3>
+						<p class="feature-item-description">Не только китайского, но и местного производства!</p>
+					</li>
+				</ul>
+			</section>
+			<section class="reason reason-second">
+				<div class="reason-image">
+					<img src="img/reason2.jpg" width="" height="" alt="Там есть мост дьявола">
+				</div>
+				<div class="reason-info">
+					<h3 class="reason-title">Там есть мост дьявола</h3>
+						<span class="reason-number">– №2 –</span>
+						<p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>	
+				</div>
+			</section>
+			<div class="reasons-row">
+				<section class="reason reason-third">
+					<div class="reason-info">
+					<h3 class="reason-title">Небольшая площадь</h3>
+						<span class="reason-number">– №3 –</span>
+						<p class="reason-description">Все достопримечательности<br> находятся очень близко</p>	
+					</div>
+				</section>
+				<section class="reason reason-forth">
+					<div class="reason-info">
+					<h3 class="reason-title">Красивая дорога</h3>
+						<span class="reason-number">– №4 –</span>
+						<p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>	
+					</div>
+				</section>
+				<section class="reason reason-fifth">
+					<div class="reason-info">
+					<h3 class="reason-title">Мало туристов</h3>
+						<span class="reason-number">– №5 –</span>
+						<p class="reason-description">Большинство едет в Гранд Каньон и толпится там</p>	
+					</div>
+				</section>
+			</div>
+			<div class="search">
+				<h2 class="search-title">Заинтересовались?</h2>
+				<p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<a href="#" class="search-btn">Поиск гостиницы в Седоне</a>
+			</div>
+			<div class="map-image" id="map-image">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d591938.158762296!2d-111.94959381352574!3d34.95592605864562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2sru!4v1446837046152" allowfullscreen></iframe>
+			</div>
+		</main>
+		<footer class="main-footer">
+			<a href="#" class="hashtag">#visitsedona</a>
+			<ul class="footer-social">
+				<li><a href="#" class="social-button social-btn-twitter">Твиттер</a></li>
+				<li><a href="#" class="social-button social-btn-fb">Фейсбук</a></li>
+				<li><a href="#" class="social-button social-btn-youtube">Ютьюб</a></li>
+			</ul>
+			<div class="footer-copyright">
+				<span>Website by</span>
+				<a class="copyright_logo" href="https://htmlacademy.ru"></a>
+			</div>
+		</footer>
+	<!-- Всплывающее окно пока здесь, можно перенести в конец div class="search" -->
+		<div class="search-form">
+		<!-- Как сделать в форме календарики? -->
+			<form class="search-hotel" action="#" method="get">
+				<div class="input-line">
+					<label for="check-in">Дата заезда:</label>
+					<input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017"> 
+				</div>
+				<div class="input-line">
+					<label for="check-out">Дата выезда:</label>
+					<input type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
+				</div>
+				<div class="input-line amount">
+					<div class="input-column adults_amount">
+						<label for="adults">Взрослые:</label>
+						<div class="minus-plus-buttons">
+						<!-- Или ниже нужны buttons? -->
+							<span class="minus-plus-buttons btn-minus"></span>
+							<input type="text" name="adults" id="adults" value="2">
+							<span class="minus-plus-buttons btn-plus"></span>
+						</div>
+					</div>
+					<div class="input-column children_amount">
+						<label for="children">Дети:</label>
+						<div class="minus-plus-buttons">
+							<span class="minus-plus-buttons btn-minus"></span>
+							<input type="text" name="children" id="children" value="0">
+							<span class="minus-plus-buttons btn-plus"></span>
+						</div>
+					</div>
+				</div>	
+			<!-- Или ниже button? -->
+				<input class="search-btn-blue" type="submit" value="Найти">
+			</form>
+		</div>
+		<script src="js/script.min.js"></script>
+	</body>
 </html>
