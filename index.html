@@ -116,37 +116,44 @@
 		</footer>
 	<!-- Всплывающее окно пока здесь, можно перенести в конец div class="search" -->
 		<div class="search-form">
-		<!-- Как сделать в форме календарики? -->
-			<form class="search-hotel" action="#" method="get">
+			<form class="search-hotel" action="https://echo.htmlacademy.ru" method="get">
 				<div class="input-line">
 					<label for="check-in">Дата заезда:</label>
 					<input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
+          <!-- Внутри баттона может быть не svg, а img -->
+          <button class="search-form__calendar-btn" type="button" name="calendar">
+            <svg class="search-form__calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/><path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/></svg>
+          </button>
 				</div>
 				<div class="input-line">
 					<label for="check-out">Дата выезда:</label>
 					<input type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
+          <!-- Внутри баттона может быть не svg, а img -->
+          <button class="search-form__calendar-btn" type="button" name="calendar">
+            <svg class="search-form__calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/><path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/></svg>
+          </button>
 				</div>
 				<div class="input-line amount">
 					<div class="input-column adults_amount">
 						<label for="adults">Взрослые:</label>
 						<div class="minus-plus-buttons">
 						<!-- Или ниже нужны buttons? -->
-							<span class="minus-plus-buttons btn-minus"></span>
+							<button class="minus-plus-buttons btn-minus" type="button"><span class="visually-hidden">Меньше</span></button>
 							<input type="text" name="adults" id="adults" value="2">
-							<span class="minus-plus-buttons btn-plus"></span>
+							<button class="minus-plus-buttons btn-plus" type="button"><span class="visually-hidden">Больше</span></button>
 						</div>
 					</div>
 					<div class="input-column children_amount">
 						<label for="children">Дети:</label>
 						<div class="minus-plus-buttons">
-							<span class="minus-plus-buttons btn-minus"></span>
+							<button class="minus-plus-buttons btn-minus" type="button"><span class="visually-hidden">Меньше</span></button>
 							<input type="text" name="children" id="children" value="0">
-							<span class="minus-plus-buttons btn-plus"></span>
+							<button class="minus-plus-buttons btn-plus" type="button"><span class="visually-hidden">Больше</span></button>
 						</div>
 					</div>
 				</div>
-			<!-- Или ниже button? -->
-				<input class="search-btn-blue" type="submit" value="Найти">
+			<!-- Или ниже input? без разницы -->
+				<button class="search-btn-blue" type="submit">Найти</button>
 			</form>
 		</div>
 		<script src="js/script.min.js"></script>

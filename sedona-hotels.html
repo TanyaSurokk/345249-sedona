@@ -23,21 +23,21 @@
 		</header>
 		<main class="container">
 			<h1 class="visually-hidden">Поиск отелей в Седоне</h1>
-			<div class="filters">
-				<form action="#" method="get">
+			<section class="filters">
+				<form action="https://echo.htmlacademy.ru" method="get">
 					<fieldset class="filters filter-infrastructure">
 						<legend class="heading">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-item">
-                <input type="checkbox" name="swimming_pool" id="swimming_pool" checked>
+                <input class="visually-hidden" type="checkbox" name="swimming_pool" id="swimming_pool" checked>
               	<label for="swimming_pool">Бассейн</label>
               </li>
               <li class="filter-item">
-                <input type="checkbox" name="parking_lot" id="parking_lot">
+                <input class="visually-hidden" type="checkbox" name="parking_lot" id="parking_lot">
                 <label for="parking_lot">Парковка</label>
               </li>
               <li class="filter-item">
-                <input type="checkbox" name="wifi" id="wifi">
+                <input class="visually-hidden" type="checkbox" name="wifi" id="wifi">
                 <label for="wifi">Wi-fi</label>
               </li>
              </ul>
@@ -46,15 +46,15 @@
 						<legend class="heading">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
-                <input type="checkbox" name="hotel" id="hotel" checked>
+                <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
               	<label for="hotel">Гостиница</label>
               </li>
               <li class="filter-item">
-                <input type="checkbox" name="motel" id="motel" checked>
+                <input class="visually-hidden" type="checkbox" name="motel" id="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
               <li class="filter-item">
-                <input type="checkbox" name="apartments" id="apartments" checked>
+                <input class="visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
              </ul>
@@ -76,9 +76,9 @@
               </div>
             </div>
           </fieldset>
-          <input type="submit" class="btn-show" value="Показать">
+          <button type="submit" class="btn-show">Показать</button>
         </form>
-			</div>
+			</section>
 			<div class="catalog-sorting">
 				<h2 class="visually hidden">Сортировка найденных отелей</h2>
 				<span class="catalog-sorting-result">Найдено: 3</span>
@@ -111,7 +111,7 @@
 									<a class="btn btn-brown" href="#">Забронировать</a>
 								</p>
 								<div class="hotels-item-rating">
-									<p class="hotels-item-stars">
+									<p class="hotels-item-stars" aria-label="4 звезды">
 										<span class="star"></span>
 										<span class="star"></span>
 										<span class="star"></span>
@@ -136,7 +136,7 @@
 									<a class="btn btn-brown" href="#">Забронировать</a>
 								</p>
 								<div class="hotels-item-rating">
-									<p class="hotels-item-stars">
+									<p class="hotels-item-stars" aria-label="3 звезды">
 										<span class="star"></span>
 										<span class="star"></span>
 										<span class="star"></span>
@@ -160,7 +160,7 @@
 									<a class="btn btn-brown" href="#">Забронировать</a>
 								</p>
 								<div class="hotels-item-rating">
-									<p class="hotels-item-stars">
+									<p class="hotels-item-stars" aria-label="2 звезды">
 										<span class="star"></span>
 										<span class="star"></span>
 									</p>
