@@ -60,38 +60,40 @@
                 </li>
                </ul>
   					</fieldset>
-  					<fieldset class="filter-price">
-              <legend>Стоимость в сутки (р):</legend>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
+            <div class="filter-price-container">
+    					<fieldset class="filter-price">
+                <legend>Стоимость в сутки (р):</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="3000"></label>
+                  </div>
                 </div>
-                <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="3000"></label>
-                </div>
-              </div>
-            </fieldset>
-            <button type="submit" class="btn btn-show">Показать</button>
+              </fieldset>
+              <button type="submit" class="btn btn-show">Показать</button>
+            </div>
           </form>
   			</section>
   			<div class="catalog-sorting">
   				<h2 class="visually-hidden">Сортировка найденных отелей</h2>
   				<span class="catalog-sorting-result">Найдено: 3</span>
   				<span class="catalog-sorting-heading">Сортировка:</span>
-            <ul class="sorting-criteria-center">
-              <li><a class="sorting-criterion active">по цене</a></li>
-              <li><a class="sorting-criterion" href="#">по типу</a></li>
-              <li><a class="sorting-criterion" href="#">по рейтингу</a></li>
-            </ul>
-            <ul class="sorting-criteria-right">
-            	<li><a class="arrow arrow-up" href="#">Вверх</a></li>
-              <li><a class="arrow arrow-down active">Вниз</a></li>
-            </ul>
+          <ul class="sorting-criteria-center">
+            <li><a class="sorting-criterion active">по цене</a></li>
+            <li><a class="sorting-criterion" href="#">по типу</a></li>
+            <li><a class="sorting-criterion" href="#">по рейтингу</a></li>
+          </ul>
+          <ul class="sorting-criteria-right">
+            <li><a class="arrow arrow-up" href="#">Вверх</a></li>
+            <li><a class="arrow arrow-down active">Вниз</a></li>
+          </ul>
   			</div>
   			<section class="hotels">
   				<h2 class="visually-hidden">Результаты поиска отелей в Седоне</h2>
@@ -110,15 +112,15 @@
   									<a class="btn btn-blue" href="#">Подробнее</a>
   									<a class="btn btn-brown" href="#">Забронировать</a>
   								</p>
-  								<div class="hotels-item-rating">
-  									<p class="hotels-item-stars" aria-label="4 звезды">
-  										<span class="star"></span>
-  										<span class="star"></span>
-  										<span class="star"></span>
-  										<span class="star"></span>
-  									</p>
-  									<span class="rating">Рейтинг: 8,5</span>
-  								</div>
+              </div>
+  						<div class="hotels-item-rating">
+  							<p class="hotels-item-stars" aria-label="4 звезды">
+  								<span class="star"></span>
+  								<span class="star"></span>
+  								<span class="star"></span>
+  								<span class="star"></span>
+  							</p>
+  							<span class="rating">Рейтинг: 8,5</span>
   						</div>
   					</li>
   					<li class="hotels-item">
@@ -135,14 +137,14 @@
   									<a class="btn btn-blue" href="#">Подробнее</a>
   									<a class="btn btn-brown" href="#">Забронировать</a>
   								</p>
-  								<div class="hotels-item-rating">
-  									<p class="hotels-item-stars" aria-label="3 звезды">
-  										<span class="star"></span>
-  										<span class="star"></span>
-  										<span class="star"></span>
-  									</p>
-  									<span class="rating">Рейтинг: 8,9</span>
-  								</div>
+              </div>
+  						<div class="hotels-item-rating">
+  							<p class="hotels-item-stars" aria-label="3 звезды">
+  								<span class="star"></span>
+  								<span class="star"></span>
+  								<span class="star"></span>
+  							</p>
+  							<span class="rating">Рейтинг: 8,9</span>
   						</div>
   					</li>
   					<li class="hotels-item">
@@ -159,20 +161,20 @@
   									<a class="btn btn-blue" href="#">Подробнее</a>
   									<a class="btn btn-brown" href="#">Забронировать</a>
   								</p>
-  								<div class="hotels-item-rating">
-  									<p class="hotels-item-stars" aria-label="2 звезды">
-  										<span class="star"></span>
-  										<span class="star"></span>
-  									</p>
-  									<span class="rating">Рейтинг: 9,2</span>
-  								</div>
+              </div>
+  						<div class="hotels-item-rating">
+  							<p class="hotels-item-stars" aria-label="2 звезды">
+  								<span class="star"></span>
+  								<span class="star"></span>
+  							</p>
+  							<span class="rating">Рейтинг: 9,2</span>
   						</div>
   					</li>
   				</ul>
   			</section>
   		</main>
   		<footer class="main-footer">
-  			<a href="#" class="hashtag">#visitsedona</a>
+  			<p class="hashtag"><a class="hashtag-link" href="#">#visitsedona</a></p>
   			<ul class="footer-social">
   				<li><a href="#" class="social-button social-btn-twitter">Твиттер</a></li>
   				<li><a href="#" class="social-button social-btn-fb">Фейсбук</a></li>
