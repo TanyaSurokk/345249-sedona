@@ -239,7 +239,7 @@ a {
 .feature-item {
   position: relative;
   width: 400px;
-  padding: 160px 73px 82px;
+  padding: 160px 48px 82px;
   text-align: center;
 }
 
@@ -455,8 +455,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -471,12 +469,17 @@ a {
   padding: 6px 12px;
   padding-right: 40px;
   width: 346px;
+  height: 38px;
   font: inherit;
   text-transform: inherit;
   color: inherit;
   background-color: #f2f2f2;
   border: none;
   outline: none;
+}
+
+.search-input-wrapper {
+  position: relative;
 }
 
 .input-line.amount {
@@ -489,8 +492,12 @@ a {
 
 .search-form-calendar-btn {
   position: absolute;
-  right: 2px;
+  width: 39px;
+  height: 38px;
+  top: 0;
+  right: 0;
   border: 0;
+  padding: 0;
   background-color: transparent;
   cursor: pointer;
 }
@@ -808,6 +815,7 @@ a {
 
 .toggle {
   position: absolute;
+  left: 0;
   top: -9px;
   width: 20px;
   height: 20px;
@@ -819,18 +827,20 @@ a {
   cursor: pointer;
 }
 
-.toggle-min {
-  left: 0;
-}
-
 .toggle-max {
-  left: 80%;
+  margin-left: 80%;
 }
 
 .toggle:hover {
+  top: -10px;
+  left: -1px;
   width: 22px;
   height: 22px;
   border-width: 9px;
+}
+
+.toggle:focus {
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .btn-show {
@@ -1020,8 +1030,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 0;
 }
 
@@ -1063,16 +1071,16 @@ a {
   line-height: 26px;
 }
 
-.hotels-item-description h3 a {
+.hotels-item-name a {
   color: #000000;
 }
 
-.hotels-item-description h3 a:hover,
-.hotels-item-description h3 a:focus {
+.hotels-item-name a:hover,
+.hotels-item-name a:focus {
   color: #81b3d2;
 }
 
-.hotels-item-description h3 a:active {
+.hotels-item-name a:active {
   color: rgba(0, 0 ,0, 0.3);
 }
 
